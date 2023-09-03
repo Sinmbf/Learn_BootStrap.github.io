@@ -12,7 +12,7 @@
 
 <body>
     <!-- Nav Bar -->
-    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark py-3">
         <div class="container-fluid">
             <a class="navbar-brand" href="#">Fool <span class="text-info">Coding</span></a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
@@ -44,7 +44,7 @@
                         </ul>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="/contact.html">Contact Us</a>
+                        <a class="nav-link" href="./contact.html">Contact Us</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link disabled" aria-disabled="true">Library</a>
@@ -52,11 +52,83 @@
                 </ul>
                 <form class="d-flex" role="search">
                     <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
-                    <button class="btn btn-outline-info" type="submit">Search</button>
+                    <button class="btn btn-outline-info mx-2" type="submit">Search</button>
                 </form>
+                <div class="text-center mt-sm-4 mt-3 mt-lg-0">
+                    <button class="btn btn-outline-warning mx-1 mx-sm-3 mx-md-4 mx-lg-1"data-bs-toggle="modal" data-bs-target="#loginModal">Login</button>
+                    <button class="btn btn-outline-success mx-1"data-bs-toggle="modal" data-bs-target="#signUpModal">Sign Up</button>
+                </div>
             </div>
         </div>
     </nav>
+
+    <!-- Login Modal -->
+    <div class="modal fade" id="loginModal" tabindex="-1" aria-labelledby="loginModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h1 class="modal-title fs-5" id="exampleModalLabel">Login To Fool's Coding</h1>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <form>
+                        <div class="mb-3">
+                            <label for="exampleInputEmail1" class="form-label">Email address</label>
+                            <input type="email" class="form-control" id="exampleInputEmail1"
+                                aria-describedby="emailHelp">
+                            <div id="emailHelp" class="form-text">We'll never share your email with anyone else.</div>
+                        </div>
+                        <div class="mb-3">
+                            <label for="exampleInputPassword1" class="form-label">Password</label>
+                            <input type="password" class="form-control" id="exampleInputPassword1">
+                        </div>
+                        <div class="mb-3 form-check">
+                            <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                            <label class="form-check-label" for="exampleCheck1">Check me out</label>
+                        </div>
+                        <button type="submit" class="btn btn-primary w-100">Login</button>
+                    </form>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary w-100" data-bs-dismiss="modal">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Sign Up Modal -->
+    <div class="modal fade" id="signUpModal" tabindex="-1" aria-labelledby="signUpModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h1 class="modal-title fs-5" id="exampleModalLabel">Sign Up For Fool's Coding</h1>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <form>
+                        <div class="mb-3">
+                            <label for="exampleInputEmail1" class="form-label">Email address</label>
+                            <input type="email" class="form-control" id="exampleInputEmail1"
+                                aria-describedby="emailHelp">
+                            <div id="emailHelp" class="form-text">We'll never share your email with anyone else.</div>
+                        </div>
+                        <div class="mb-3">
+                            <label for="exampleInputPassword1" class="form-label">Password</label>
+                            <input type="password" class="form-control" id="exampleInputPassword1">
+                        </div>
+                        <div class="mb-3">
+                            <label for="exampleInputPassword1" class="form-label">Confirm Password</label>
+                            <input type="password" class="form-control" id="exampleInputPassword1">
+                        </div>
+                        <button type="submit" class="btn btn-primary w-100">Create Account</button>
+                    </form>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary w-100" data-bs-dismiss="modal">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
 
     <!-- Alerts -->
     <div class="alert alert-info alert-dismissible fade show" role="alert">
@@ -127,7 +199,7 @@
                 <div
                     class="row g-0 border rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 position-relative">
                     <div class="col p-4 d-flex flex-column position-static">
-                        <strong class="d-inline-block mb-2 text-primary-emphasis">World</strong>
+                        <strong class="d-inline-block mb-2 text-danger">World</strong>
                         <h3 class="mb-0">Global Conference</h3>
                         <div class="mb-1 text-body-secondary">Nov 12</div>
                         <p class="card-text mb-auto">This is a wider card with supporting text below as a natural
@@ -148,7 +220,7 @@
                 <div
                     class="row g-0 border rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 position-relative">
                     <div class="col p-4 d-flex flex-column position-static">
-                        <strong class="d-inline-block mb-2 text-success-emphasis">Design</strong>
+                        <strong class="d-inline-block mb-2 text-success">Design</strong>
                         <h3 class="mb-0">Learn Web Design</h3>
                         <div class="mb-1 text-body-secondary">Nov 11</div>
                         <p class="mb-auto">This is a wider card with supporting text below as a natural lead-in to
@@ -174,7 +246,7 @@
                 <div
                     class="row g-0 border rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 position-relative">
                     <div class="col p-4 d-flex flex-column position-static">
-                        <strong class="d-inline-block mb-2 text-primary-emphasis">Detailed Guide</strong>
+                        <strong class="d-inline-block mb-2 text-info">Detailed Guide</strong>
                         <h3 class="mb-0">RoadMap For Programming</h3>
                         <div class="mb-1 text-body-secondary">Nov 12</div>
                         <p class="card-text mb-auto">This is a wider card with supporting text below as a natural
@@ -195,7 +267,7 @@
                 <div
                     class="row g-0 border rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 position-relative">
                     <div class="col p-4 d-flex flex-column position-static">
-                        <strong class="d-inline-block mb-2 text-success-emphasis">Tutorial</strong>
+                        <strong class="d-inline-block mb-2 text-warning">Tutorial</strong>
                         <h3 class="mb-0">Learn JavaScript</h3>
                         <div class="mb-1 text-body-secondary">Nov 11</div>
                         <p class="mb-auto">This is a wider card with supporting text below as a natural lead-in to
@@ -215,6 +287,12 @@
         </div>
         <!-- End of Row 2 -->
     </div>
+
+    <!-- Footer -->
+    <footer class="container-fluid bg-dark text-light pt-3 d-flex justify-content-center align-items-center flex-column ">
+        <p>© 2017–2023 Fool's Coding, Inc. · <a href="#">Privacy</a> · <a href="#">Terms</a></p>
+        <p class="float-end"><a href="#">Back to top</a></p>
+    </footer>
 
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"
